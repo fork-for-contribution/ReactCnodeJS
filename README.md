@@ -24,10 +24,12 @@
 #### 本地运行：
 
 ```bash
-git clone https://github.com/shuiRong/ReactCnodeJS.git
+git clone git@github.com:fork-for-contribution/ReactCnodeJS.git
 cd ReactCnodeJS
 yarn
 yarn start
+
+
 ```
 
 P.S.: 默认用的是 3000 端口。
