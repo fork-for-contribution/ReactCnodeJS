@@ -24,6 +24,11 @@
 #### 本地运行：
 
 ```bash
+npm config set prefix /mnt/y/tmp/npm_global_nodejs
+npm config set cache /mnt/y/tmp/npm_cache
+yarn config set global-folder /mnt/y/tmp/yarn_global_nodejs
+yarn config set cache-folder /mnt/y/tmp/yarn_cache
+
 git clone git@github.com:fork-for-contribution/ReactCnodeJS.git
 cd ReactCnodeJS
 yarn
