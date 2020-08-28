@@ -6,12 +6,10 @@ import OtherTopic from '@src/components/OtherTopic/Index'
 import RecentReply from '@src/components/RecentReply/Index'
 
 class Profile extends Component {
-  constructor() {
-    super()
-    this.state = {
-      loginname: ''
-    }
+  state = {
+    loginname: ''
   }
+
   /**
    * 1. 调用接口获取数据
    * 2. 绑定窗口滚动监听函数

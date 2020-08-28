@@ -15,12 +15,10 @@ class ProfilePanel extends Component {
    * state有两种初始化方法，这是其中一种
    * 另外一种见：header/index.js文件
    */
-  constructor() {
-    super()
-    this.state = {
-      user: {}
-    }
+  state = {
+    user: {}
   }
+
   /**
    * 调用接口获取数据
    * P.S. 一般在此钩子下面调用接口或者类似操作

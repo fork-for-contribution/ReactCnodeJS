@@ -13,12 +13,11 @@ class RecentReply extends Component {
   static defaultProps = {
     simple: true // 是否展示简单模式？
   }
-  constructor() {
-    super()
-    this.state = {
-      user: {}
-    }
+
+  state = {
+    user: {}
   }
+
   /**
    * 监听'user'，将被传入的数据设置到当前组件state中
    * P.S. 一般在此钩子下面调用接口或者类似操作

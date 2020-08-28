@@ -6,18 +6,15 @@ import ProfilePanel from '@src/components/ProfilePanel/Index'
 import OtherTopic from '@src/components/OtherTopic/Index'
 import RecentReply from '@src/components/RecentReply/Index'
 import Reply from '@src/components/Reply/Index'
-import '@src/assets/vue.css'
+import '@src/assets/index.css'
 import moment from 'moment'
 import { Link } from 'react-router-dom'
 import tab from '@src/utils/tab'
 import { Divider, Skeleton } from 'antd'
 
 class Topic extends Component {
-  constructor() {
-    super()
-    this.state = {
-      topic: {}
-    }
+  state = {
+    topic: {}
   }
   /**
    * 调用接口获取数据
