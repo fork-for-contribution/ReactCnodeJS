@@ -60,14 +60,13 @@ class Home extends Component {
    * 滚动函数，判断当前滚动条是否到了底部来决定是否重新拉取数据
    */
   scrollMethod = () => {
-    const sumH =
-      document.body.scrollHeight || document.documentElement.scrollHeight
+    const sumH = document.body.scrollHeight || document.documentElement.scrollHeight
     const viewH = document.documentElement.clientHeight
-    const scrollH =
-      document.body.scrollTop || document.documentElement.scrollTop
+    const scrollH = document.body.scrollTop || document.documentElement.scrollTop
     if (viewH + scrollH >= sumH) {
       this.getTopics()
     }
+    console.log('scroll')
   }
   /**
    * 当前Tab变化时判断Store里是否已经存储数据。

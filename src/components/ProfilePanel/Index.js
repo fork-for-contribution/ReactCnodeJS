@@ -32,7 +32,7 @@ class ProfilePanel extends Component {
    * 这时候就可以在当前钩子下重新获取数据
    * @param {Object} nextProps props对象
    */
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     this.fetchData(nextProps.loginname)
   }
   /**
